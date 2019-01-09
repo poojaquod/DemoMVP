@@ -1,6 +1,6 @@
 package com.example.abc.demomvp;
 
-//Declare interfase here
+//Declare interfase here by pooja kamate
 public interface GetQuoteInteractor {
     interface OnFinishedListener {
         void onfinished(String name);
