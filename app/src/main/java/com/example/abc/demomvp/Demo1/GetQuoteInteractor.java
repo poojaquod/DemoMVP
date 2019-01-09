@@ -1,4 +1,4 @@
-package com.example.abc.demomvp;
+package com.example.abc.demomvp.Demo1;
 
 //Declare interfase here by pooja kamate
 public interface GetQuoteInteractor {

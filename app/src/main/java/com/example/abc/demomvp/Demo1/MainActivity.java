@@ -1,4 +1,4 @@
-package com.example.abc.demomvp;
+package com.example.abc.demomvp.Demo1;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -6,6 +6,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ProgressBar;
 import android.widget.TextView;
+
+import com.example.abc.demomvp.R;
 
 public class MainActivity extends AppCompatActivity implements MainView{
 
