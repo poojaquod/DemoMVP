@@ -9,7 +9,7 @@ import android.widget.TextView;
 
 import com.example.abc.demomvp.R;
 
-public class MainActivity extends AppCompatActivity implements MainView{
+public class DemoActivity1 extends AppCompatActivity implements MainView{
 
     private TextView textView;
     private Button button;
@@ -19,6 +19,7 @@ public class MainActivity extends AppCompatActivity implements MainView{
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        getSupportActionBar().setTitle("DemoActivity1");
         textView = (TextView) findViewById(R.id.textView);
         button = (Button) findViewById(R.id.button);
         progressBar = (ProgressBar) findViewById(R.id.progressBar);

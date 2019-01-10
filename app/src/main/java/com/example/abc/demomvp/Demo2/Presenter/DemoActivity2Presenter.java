@@ -2,11 +2,11 @@ package com.example.abc.demomvp.Demo2.Presenter;
 
 import com.example.abc.demomvp.Demo2.Model.User;
 
-public class MainActivityPresenter {
+public class DemoActivity2Presenter {
   private User user;
   private View view;
 
-    public MainActivityPresenter(View view) {
+    public DemoActivity2Presenter(View view) {
         this.user = new User();
         this.view = view;
     }

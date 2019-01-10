@@ -2,8 +2,6 @@ package com.example.abc.demomvp.Demo2.View;
 
 import android.content.res.Resources;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.text.Editable;
@@ -14,11 +12,11 @@ import android.widget.ProgressBar;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import com.example.abc.demomvp.Demo2.Presenter.MainActivityPresenter;
+import com.example.abc.demomvp.Demo2.Presenter.DemoActivity2Presenter;
 import com.example.abc.demomvp.R;
 
-public class DemoActivity2 extends AppCompatActivity implements MainActivityPresenter.View {
-    private MainActivityPresenter presenter;
+public class DemoActivity2 extends AppCompatActivity implements DemoActivity2Presenter.View {
+    private DemoActivity2Presenter presenter;
     TextView myTextView;
     ProgressBar progressBar;
     @Override
@@ -28,7 +26,7 @@ public class DemoActivity2 extends AppCompatActivity implements MainActivityPres
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        presenter=new MainActivityPresenter(this);
+        presenter=new DemoActivity2Presenter(this);
         myTextView = findViewById(R.id.myTextView);
         EditText userName = findViewById(R.id.username);
         EditText email = findViewById(R.id.email);
